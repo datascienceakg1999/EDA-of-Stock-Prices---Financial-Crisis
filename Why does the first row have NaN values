@@ -1,0 +1,10 @@
+Our first value has NaN because you can not get a percent return on the very first day because there is nothing in the past to compare it to.
+for tick in tickers:
+    returns[tick + ' Return'] = bank_stocks[tick]['Close'].pct_change()
+
+returns.head(3)
+BAC Return	C Return	GS Return	JPM Return	MS Return	WFC Return
+Date						
+2006-01-03	NaN	NaN	NaN	NaN	NaN	NaN
+2006-01-04	-0.010620	-0.018462	-0.013812	-0.014183	0.000686	-0.011599
+2006-01-05	0.001288	0.004961	-0.000393	0.003029	0.002742	-0.001110
