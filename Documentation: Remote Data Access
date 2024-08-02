@@ -1,0 +1,10 @@
+start = datetime.datetime(2006,1,1)
+end = datetime.datetime(2020,1,1)
+
+# set each bank to be a separate dataframe
+BAC = data.DataReader("BAC", 'yahoo', start, end)
+C = data.DataReader("C", 'yahoo', start, end)
+GS = data.DataReader("GS", 'yahoo', start, end)
+JPM = data.DataReader("JPM", 'yahoo', start, end)
+MS = data.DataReader("MS", 'yahoo', start, end)
+WFC = data.DataReader("WFC", 'yahoo', start, end)
