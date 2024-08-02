@@ -1,0 +1,8 @@
+C['Close'].idxmax()
+Timestamp('2006-12-27 00:00:00')
+Returns DataFrame
+Now we are going to create a new empty DataFrame called returns. This dataframe will contain the returns for each bank's stock.
+
+Returns are typically defined by:
+
+rt=pt−pt−1pt−1=ptpt−1−1
