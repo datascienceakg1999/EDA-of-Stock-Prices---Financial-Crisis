@@ -1,0 +1,10 @@
+The bank with the highest stock price is Citigroup.
+bank_stocks.xs('Close', axis=1, level='Stock Info').max()
+Bank Ticker
+BAC     54.900002
+C      564.099976
+GS     273.380005
+JPM    139.399994
+MS      89.300003
+WFC     65.930000
+dtype: float64
