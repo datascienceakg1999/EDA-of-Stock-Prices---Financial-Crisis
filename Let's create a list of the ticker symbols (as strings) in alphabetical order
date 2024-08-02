@@ -1,0 +1,2 @@
+tickers = ['BAC', 'C', 'GS', 'JPM', 'MS', 'WFC']
+Use pd.concat to concatenate the bank dataframes together to a single data frame called bank_stocks. Set the keys argument equal to the tickers list.
