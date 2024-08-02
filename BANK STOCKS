@@ -1,0 +1,3 @@
+bank_stocks = pd.concat([BAC, C, GS, JPM, MS, WFC], axis=1, keys=tickers)
+# bank_stocks
+Set the column name levels:
