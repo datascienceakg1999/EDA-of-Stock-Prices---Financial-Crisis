@@ -1,0 +1,5 @@
+Exploratory data analysis is an approach to analyzing data sets to summarize their main characteristics, often with visual methods. In this case we are going to visualize and analyze the historical data of these banks and try to find relevant information.
+
+During the notebook we will answer the questions and explain the concepts used.
+
+I encourage you to check out the documentation on Multi-Level Indexing and Using .xs, since we will be using it a lot.
