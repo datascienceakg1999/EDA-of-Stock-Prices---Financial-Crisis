@@ -1,0 +1,12 @@
+returns.std().plot(kind='bar', color='Green')
+plt.ylabel('Standard Deviation')
+plt.title('Banks Standard Deviation', fontsize=15)
+sns.despine()
+
+Which would you classify as the riskiest for the year 2015?
+
+They all have a similar risk profile with Wells Fargo being the lowest risk by not that much.
+returns.std().plot(kind='bar', color='Green')
+plt.ylabel('Standard Deviation')
+plt.title('Banks Standard Deviation', fontsize=15)
+sns.despine()
