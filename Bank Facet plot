@@ -1,0 +1,7 @@
+Facet plots, also known as trellis plots or small multiples, are figures made up of multiple subplots which have the same set of axes, where each subplot shows a subset of the data.
+
+In this faceted area plot we can see all the banks separately.
+
+
+fig = px.area(bank_stocks.xs(key='Close', axis=1, level='Stock Info'), facet_col="Bank Ticker", facet_col_wrap=2)
+fig.show()
