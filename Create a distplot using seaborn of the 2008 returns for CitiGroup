@@ -1,0 +1,6 @@
+plt.figure(figsize=(10,8))
+ax = sns.distplot(returns.loc['2008-01-01':'2008-12-31']['C Return'], color='red', bins=50)
+ax.set_title('2008 CitiGroup Returns')
+ax.set_xlabel('Returns')
+ax.set_ylabel('Numbers of Returns')
+Text(0, 0.5, 'Numbers of Returns')
