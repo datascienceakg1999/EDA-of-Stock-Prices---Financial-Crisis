@@ -2,3 +2,27 @@ The OHLC chart (for open, high, low and close) is a style of financial chart des
 The tip of the lines represent the low and high values and the horizontal segments represent the open and close values.
 Sample points where the close value is higher (lower) then the open value are called increasing (decreasing).
 By default, increasing items are drawn in green whereas decreasing are drawn in red.
+fig = go.Figure(data=go.Ohlc(x=C.index,
+                    open=C['Open'],
+                    high=C['High'],
+                    low=C['Low'],
+                    close=C['Close']))
+
+fig.update_layout(
+    title='Citigroup Stock Price',
+    yaxis_title='C Stock',
+    shapes = [dict(
+        x0='2009-01-20', x1='2009-01-20', y0=0, y1=1, xref='x', yref='paper', line_width=2),
+             dict(
+        x0='2007-12-01', x1='2007-12-01', y0=0, y1=1, xref='x', yref='paper', line_width=2)],
+    annotations=[dict(
+        x='2009-01-20', y=0.95, xref='x', yref='paper',
+        showarrow=False, xanchor='left', text='President Obama Took Office'), 
+                 dict(
+        x='2007-12-01', y=0.1, xref='x', yref='paper',
+        showarrow=False, xanchor='right', text='Subprime Mortgage Crisis')]
+)
+
+fig.show()
+
+6. References
