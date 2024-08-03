@@ -1,0 +1,20 @@
+fig = make_subplots(rows=3, cols=2)
+
+trace0 = go.Histogram(x=returns.loc['2018-01-01':'2019-12-31']['BAC Return'], nbinsx=50, name="BAC")
+trace1 = go.Histogram(x=returns.loc['2018-01-01':'2019-12-31']['C Return'], nbinsx=50, name="C")
+trace2 = go.Histogram(x=returns.loc['2018-01-01':'2019-12-31']['GS Return'], nbinsx=50, name="GS")
+trace3 = go.Histogram(x=returns.loc['2018-01-01':'2019-12-31']['JPM Return'], nbinsx=50, name="JPM")
+trace4 = go.Histogram(x=returns.loc['2018-01-01':'2019-12-31']['MS Return'], nbinsx=50, name="MS")
+trace5 = go.Histogram(x=returns.loc['2018-01-01':'2019-12-31']['WFC Return'], nbinsx=50, name="WFC")
+
+fig.append_trace(trace0, 1, 1)
+fig.append_trace(trace1, 1, 2)
+fig.append_trace(trace2, 2, 1)
+fig.append_trace(trace3, 2, 2)
+fig.append_trace(trace4, 3, 1)
+fig.append_trace(trace5, 3, 2)
+
+fig.update_layout(title_text='Banks Returns (2018 - 2019)')
+
+fig.show()
+
