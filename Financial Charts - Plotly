@@ -1,0 +1,3 @@
+for tick in tickers:
+    bank_stocks[tick]['Close'].plot(label=tick, figsize=(12,6))
+plt.legend()
