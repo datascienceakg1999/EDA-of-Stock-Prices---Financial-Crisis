@@ -1,0 +1,26 @@
+The candlestick chart is a style of financial chart describing open, high, low and close for a given x coordinate (most likely time). The boxes represent the spread between the open and close values and the lines represent the spread between the low and high values. Sample points where the close value is higher (lower) then the open value are called increasing (decreasing). By default, increasing candles are drawn in green whereas decreasing are drawn in red.
+
+# Bank of America Candlestick Chart
+fig = go.Figure(data=[go.Candlestick(x=BAC.index,
+                open=BAC['Open'],
+                high=BAC['High'],
+                low=BAC['Low'], 
+                close=BAC['Close'])
+                ])
+
+fig.update_layout(
+    title='Bank of Amercia Stock Price',
+    yaxis_title='BAC Stock',
+    shapes = [dict(
+        x0='2009-01-20', x1='2009-01-20', y0=0, y1=1, xref='x', yref='paper', line_width=2),
+             dict(
+        x0='2007-12-01', x1='2007-12-01', y0=0, y1=1, xref='x', yref='paper', line_width=2)],
+    annotations=[dict(
+        x='2009-01-20', y=0.95, xref='x', yref='paper',
+        showarrow=False, xanchor='left', text='President Obama Took Office'), 
+                 dict(
+        x='2007-12-01', y=0.1, xref='x', yref='paper',
+        showarrow=False, xanchor='right', text='Subprime Mortgage Crisis')]
+)
+
+fig.show()
