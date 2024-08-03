@@ -1,0 +1,5 @@
+A simple moving average (SMA) calculates the average of a selected range of prices, usually closing prices, by the number of periods in that range. Is a technical indicator that can aid in determining if an asset price will continue or if it will reverse a bull or bear trend.
+
+Use .ta_plot(study='sma') to create a Simple Moving Averages plot of Morgan Stanley for the year 2015.
+
+MS.loc['2015-01-01':'2016-01-01']['Close'].ta_plot(study='sma', periods=[13,21,55])
