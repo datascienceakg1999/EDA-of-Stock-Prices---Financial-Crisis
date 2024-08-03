@@ -1,0 +1,11 @@
+sns.clustermap(bank_stocks.xs(key='Close', axis=1, level='Stock Info').corr(), annot=True, cmap='coolwarm')
+<seaborn.matrix.ClusterGrid at 0x7f3818252bd0>
+
+Plotly provides online graphing, analytics, and statistics tools for individuals and collaboration, as well as scientific graphing libraries for Python, R, MATLAB, Perl, Julia, Arduino, and REST.
+
+You can find more information of Cufflinks here.
+
+Let's create a line plot showing Close price for each bank for the entire index of time. We are going to show different ways of plotting the same information.
+
+Now we can clearly see the crash of Citigroup in 2008.
+Goldman Sachs also had a crash in 2008 but bounce back quite quickly after the recession.
