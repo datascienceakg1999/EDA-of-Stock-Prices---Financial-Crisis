@@ -1,0 +1,7 @@
+They all have a similar risk profile with Wells Fargo being the lowest risk by not that much.
+
+
+returns.loc['2015-01-01':'2015-12-31'].std().plot(kind='bar', color='Green')
+plt.ylabel('Standard Deviation')
+plt.title('2015 Banks Standard Deviation', fontsize=15)
+sns.despine()
