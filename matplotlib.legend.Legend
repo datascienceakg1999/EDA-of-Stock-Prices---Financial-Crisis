@@ -1,0 +1,1 @@
+bank_stocks.xs('Close', axis=1, level='Stock Info').plot(figsize=(12,6))
