@@ -1,0 +1,21 @@
+# Biggest single day losses
+returns.idxmin()
+BAC Return   2009-01-20
+C Return     2009-02-27
+GS Return    2009-01-20
+JPM Return   2009-01-20
+MS Return    2008-10-09
+WFC Return   2009-01-20
+dtype: datetime64[ns]
+ Standard Deviation
+Let's take a look at the standard deviation of the returns.
+
+Standard Deviation: Is a measure of the amount of variation or dispersion of a set of values. A low standard deviation indicates that the values tend to be close to the mean of the set, while a high standard deviation indicates that the values are spread out over a wider range.
+
+Standard deviation is the statistical measure of market volatility, measuring how widely prices are dispersed from the average price. If prices trade in a narrow trading range, the standard deviation will return a low value that indicates low volatility. Conversely, if prices swing wildly up and down, then standard deviation returns a high value that indicates high volatility.
+
+Basically, standard deviation rises as prices become more volatile. As price action calms, standard deviation heads lower.
+
+Which stock would you classify as the riskiest over the entire time period?
+
+Looks like the two most riskiest stocks are Citigroup and Morgan Stanley.
