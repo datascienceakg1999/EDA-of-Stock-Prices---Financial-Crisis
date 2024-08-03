@@ -1,0 +1,14 @@
+The moving average (MA) is a simple technical analysis tool that smooths out price data by creating a constantly updated average price. The average is taken over a specific period of time, like 10 days, 20 minutes, 30 weeks or any time period the trader chooses. The most common applications of moving averages are to identify trend direction and to determine support and resistance levels.
+
+Let's analyze the moving averages for these stocks in the year 2008.
+
+What is the rolling 30 day average against the Close Price for Bank Of America's stock for the year 2008?
+
+
+plt.figure(figsize=(12,6))
+BAC['Close'].loc['2008-01-01':'2008-12-31'].rolling(window=30).mean().plot(color='blue', label='30 Day Moving Average')
+BAC['Close'].loc['2008-01-01':'2008-12-31'].plot(color='green', label='BAC Close Price')
+plt.ylabel('Close Price')
+plt.xlabel('')
+plt.title('Bank Of America Moving Average')
+plt.legend()
