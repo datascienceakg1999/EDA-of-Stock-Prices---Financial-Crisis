@@ -1,0 +1,15 @@
+We use the Pearson correlation coefficient to examine the strength and direction of the linear relationship between two continuous variables.
+
+The correlation coefficient can range in value from −1 to +1. The larger the absolute value of the coefficient, the stronger the relationship between the variables. For the Pearson correlation, an absolute value of 1 indicates a perfect linear relationship. A correlation close to 0 indicates no linear relationship between the variables.
+
+The sign of the coefficient indicates the direction of the relationship. If both variables tend to increase or decrease together, the coefficient is positive, and the line that represents the correlation slopes upward. If one variable tends to increase as the other decreases, the coefficient is negative, and the line that represents the correlation slopes downward.
+
+Let's create a heatmap of the correlation between the stocks Close Price.
+
+
+
+plt.figure(figsize=(7,6))
+plt.title('Pearson Correlation Matrix',fontsize=15)
+sns.heatmap(bank_stocks.xs(key='Close', axis=1, level='Stock Info').corr(), annot=True, cmap='GnBu',
+            linewidths=0.25, linecolor='w', cbar_kws={"shrink": .7})
+<matplotlib.axes._subplots.AxesSubplot at 0x7f3818343590>
